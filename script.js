@@ -36,6 +36,12 @@ function pausar() {
 
                 pausas++;
 
+
+            const tempoDaPausa = document.getElementById("visor").innerText;
+            const item = document.createElement("li");
+            item.textContent = "Pausa"+ pausas + "-" +tempoDaPausa;
+
+            document.getElementById("lista-pausas").appendChild(item);
             
             }
         }
